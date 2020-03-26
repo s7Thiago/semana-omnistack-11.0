@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 
 function App() {
+  let [counter, setCounter] = useState(0);
+
+  function increment() {
+    setCounter(counter + 1);
+    console.log(counter);
+  }
+
   return (
-    <Header title='Thiago Silva'>Be a Hero</Header>
+    <div>
+      <Header>Contador: {counter}</Header>
+      <button onClick={increment}>Adicionar</button>
+    </div>
+
   );
 }
 
