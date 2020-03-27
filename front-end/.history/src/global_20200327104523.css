@@ -32,7 +32,6 @@ form input {
 
 form textarea {
     width: 100%;
-    resize: vertical;
     height: 60px;
     min-height: 140px;
     color: #333;
